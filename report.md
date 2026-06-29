@@ -99,8 +99,8 @@ pits, tailings and ponds.*
 
 ![Attribute table](figures/qgis_attribute_table.png)
 
-*Figure 4. Attribute table of change_features: id, date_before, date_after, method, area_m2,
-change_strength, confidence and a typed geometry column showchased using QGIS.*
+*Figure 4. Attribute table of change_features viewed in QGIS after opening the GeoPackage; the table shows
+id, date_before, date_after, method, area_m2, change_strength, confidence, and geometry.*
 
 An interactive map (AOI and change polygons over a satellite basemap, with area and confidence on
 hover) using folium is exported to [figures/interactive_map.html](figures/interactive_map.html) and published for
