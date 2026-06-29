@@ -103,8 +103,10 @@ pits, tailings and ponds.*
 change_strength, confidence and a typed geometry column.*
 
 An interactive map (AOI and change polygons over a satellite basemap, with area and confidence on
-hover) is in [figures/interactive_map.html](figures/interactive_map.html). A short screen recording of
-it is in [figures/folium-solafune.mp4](figures/folium-solafune.mp4).
+hover) is exported to [figures/interactive_map.html](figures/interactive_map.html) and published for
+GitHub Pages at https://akankshab454.github.io/solafune-technical-assignment/ once the repository
+Pages source is set to the `docs/` folder. A short screen recording of it is in
+[figures/folium-solafune.mp4](figures/folium-solafune.mp4).
 
 ## 3. Interpretation
 

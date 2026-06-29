@@ -135,8 +135,12 @@ matching values in `.env`, and run the pipeline. The code path is identical.
 * `figures/summary_cva_magnitude.png` and `figures/summary_ir_mad.png`: RGB before and after, change
   intensity, and detected change for each method.
 * `figures/method_comparison.png`: where CVA and IR-MAD agree or differ.
-* `figures/interactive_map.html`: folium map of the AOI and change polygons over a satellite basemap.
+* `figures/interactive_map.html`: local folium map of the AOI and change polygons over a satellite basemap.
+* `docs/index.html`: the same map exported in a GitHub Pages-friendly location.
 * `figures/folium-solafune.mp4`: a short screen recording of the interactive map.
+
+To make the map clickable on GitHub, publish the repository with GitHub Pages using the `docs/`
+folder as the source, then link readers to the live Pages URL rather than the raw repository file.
 
 ## 6. Project structure
 

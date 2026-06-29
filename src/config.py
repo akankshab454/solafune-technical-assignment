@@ -11,6 +11,7 @@ AOI_PATH = INPUT_DIR / "aoi.geojson"
 DATA_DIR = INPUT_DIR / "data"
 PROCESSED_DIR = ROOT / "data" / "processed"
 FIGURES_DIR = ROOT / "figures"
+DOCS_DIR = ROOT / "docs"
 
 DATE_BEFORE, DATE_AFTER = "20230812", "20230902"
 

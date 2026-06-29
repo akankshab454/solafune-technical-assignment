@@ -86,10 +86,12 @@ def comparison_map(before, after, results, out_path=None):
     return out_path
 
 
-def folium_map(gdf_wgs84: gpd.GeoDataFrame, out_path=None):
+def folium_map(gdf_wgs84: gpd.GeoDataFrame, out_path=None, pages_path=None):
     import folium
     out_path = out_path or config.FIGURES_DIR / "interactive_map.html"
+    pages_path = pages_path or config.DOCS_DIR / "index.html"
     config.FIGURES_DIR.mkdir(parents=True, exist_ok=True)
+    pages_path.parent.mkdir(parents=True, exist_ok=True)
     aoi = gpd.read_file(config.AOI_PATH).to_crs(epsg=4326)
     minx, miny, maxx, maxy = aoi.total_bounds
     m = folium.Map(location=[(miny + maxy) / 2, (minx + maxx) / 2], zoom_start=12)
@@ -104,4 +106,6 @@ def folium_map(gdf_wgs84: gpd.GeoDataFrame, out_path=None):
                            fields=["method", "area_m2", "confidence"])).add_to(m)
     folium.LayerControl().add_to(m)
     m.save(str(out_path))
+    if pages_path != out_path:
+        m.save(str(pages_path))
     return out_path
