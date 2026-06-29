@@ -46,10 +46,18 @@ python -m src.pipeline --methods ir_mad --no-figures
 
 Outputs:
 
-* `data/processed/`: stacked rasters, `change_map_<method>.tif`, `change_binary_<method>.tif`,
-  `vari_diff.tif`, `brightness_diff.tif`, and the spatial database `change_features.gpkg`.
-* `figures/`: `summary_<method>.png`, `method_comparison.png`, `interactive_map.html`, and
-  `folium-solafune.mp4` (a screen recording of the interactive map).
+In simple terms, the pipeline writes two kinds of results:
+
+* `data/processed/`: the machine-readable outputs. This folder holds the stacked Sentinel-2 rasters,
+  the change maps (`change_map_<method>.tif`), the black-and-white change masks
+  (`change_binary_<method>.tif`), the visible-band difference rasters (`vari_diff.tif` and
+  `brightness_diff.tif`), and the spatial database `change_features.gpkg`.
+* `figures/`: the human-friendly outputs. This folder holds the summary plots, the method comparison
+  image, the interactive Folium map (`interactive_map.html`), and the screen recording of that map
+  (`folium-solafune.mp4`).
+
+If you only want the short version: `data/processed/` is for the files the code produces, and
+`figures/` is for the pictures and map you can look at.
 
 ## 3. Run step by step
 
