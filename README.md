@@ -139,6 +139,8 @@ matching values in `.env`, and run the pipeline. The code path is identical.
 * `docs/index.html`: the same map exported in a GitHub Pages-friendly location.
 * `figures/folium-solafune.mp4`: a short screen recording of the interactive map.
 
+Live GitHub Pages map: https://akankshab454.github.io/solafune-technical-assignment/
+
 To make the map clickable on GitHub, publish the repository with GitHub Pages using the `docs/`
 folder as the source, then link readers to the live Pages URL rather than the raw repository file.
 
