@@ -94,13 +94,13 @@ on the Lumwana workings.
 
 ![Change features over Lumwana in QGIS](figures/qgis_map.png)
 
-*Figure 3. The change_features layer over OpenStreetMap. The polygons cluster on the Lumwana mine
+*Figure 3. The change_features layer over OpenStreetMap in QGIS. The polygons cluster on the Lumwana mine
 pits, tailings and ponds.*
 
 ![Attribute table](figures/qgis_attribute_table.png)
 
 *Figure 4. Attribute table of change_features: id, date_before, date_after, method, area_m2,
-change_strength, confidence and a typed geometry column.*
+change_strength, confidence and a typed geometry column showchased using QGIS.*
 
 An interactive map (AOI and change polygons over a satellite basemap, with area and confidence on
 hover) is exported to [figures/interactive_map.html](figures/interactive_map.html) and published for
