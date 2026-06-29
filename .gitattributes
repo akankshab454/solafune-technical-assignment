@@ -1,0 +1,6 @@
+# Normalize line endings; treat known binaries as binary.
+* text=auto eol=lf
+*.png binary
+*.gpkg binary
+*.tif binary
+*.html text eol=lf

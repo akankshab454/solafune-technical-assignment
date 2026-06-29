@@ -1,0 +1,18 @@
+# Python 3.13 (do NOT use 3.14: no stable rasterio/GDAL wheels yet)
+numpy
+rasterio
+geopandas
+shapely
+scikit-image      # Otsu thresholding
+scipy             # chi-square (IR-MAD), linear algebra
+matplotlib
+folium            # interactive map
+psycopg2-binary   # PostgreSQL driver
+SQLAlchemy>=2
+GeoAlchemy2       # write geometry to PostGIS
+python-dotenv
+
+# Optional (notebook). Installs deeply-nested files that can hit the Windows
+# long-path limit; install separately after enabling long paths if you want it:
+#   pip install jupyter
+

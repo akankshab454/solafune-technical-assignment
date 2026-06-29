@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+.ipynb_checkpoints/
+.pytest_cache/
+# SQLite/GeoPackage transient journal files (created while a DB is open)
+*.gpkg-shm
+*.gpkg-wal
+# GIS-generated raster statistics sidecars
+*.aux.xml
+# Ignore large/regenerable rasters, but commit the required Part-2 change outputs.
+data/processed/*.tif
+!data/processed/change_map_*.tif
+!data/processed/change_binary_*.tif
